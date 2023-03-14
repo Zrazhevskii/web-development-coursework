@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 @font-face {
     font-family: OpenSans;
     src: url(../fonts/OpenSans-Regular.ttf);
@@ -65,7 +63,7 @@
     display: flex;
     list-style-type: none;
     font-size: 11px;
-  }
+}
 
 .menu-link {
   font-family: OpenSans, sans-serif;
@@ -187,7 +185,7 @@
   list-style-type: none;
   font-family: OpenSans-Bold;
   font-size: 12px;
-  margin-top: 0;
+  margin: 0;
 }
 
 .news-teg {
@@ -293,10 +291,6 @@
   font-size: 15px;
 }
 
-.news-card {
-  margin: 0;
-}
-
 .aside-bar {
   width: 30%;
   padding-left: 8%;
@@ -358,11 +352,9 @@
   width: 100%;
   padding-left: 17px;
   padding-right: 17px;
-  
   background-color: #f4f7f6;
   border-radius: 0;
   border: 1px solid #f4f7f6;
-
   font-family: OpenSans, sans-serif;
   font-size: 13px;
 }
@@ -375,7 +367,6 @@
 .search-button {
   display: inline-block;
   width: 47px;
-  
   background-image: url("../svg/search.svg");
   background-repeat: no-repeat;
   background-size: 19px auto;
@@ -465,7 +456,6 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 23px;
-
   display: flex;
   justify-content: space-between;
 }
@@ -511,7 +501,6 @@
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 24px;
-
   position: relative;
 }
 
@@ -525,7 +514,6 @@
   position: absolute;
   left: 0;
   bottom: 25px;
-
   font-size: 14px;
   font-weight: bold;
   text-decoration: line-through;
@@ -549,7 +537,6 @@
 .social-icon-list {
   display: flex;
   justify-content: center;
-  
   list-style-type: none;
 }
 
