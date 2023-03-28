@@ -19,7 +19,6 @@
 }
 
 .header {
-    height: 450px;
     background-color: #000000;
     background: url(../images/banner-bg.jpg) no-repeat center top;
     background-size: cover;
@@ -50,11 +49,10 @@
 
 .header-content {
     max-width: 1200px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0 15px;
 
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -88,18 +86,17 @@
 }
 
 .headline {
-  max-width: 630px;
-  margin: 85px auto 0;  
+  max-width: 690px;
+  margin: 90px auto 0;  
 }
 
 .headline-text{
   font-family: OpenSans-Bold;
-  align-self: center;
   color: #ffffff;
   font-size: 36px;
   line-height: 1.7;
   text-align: center;
-  margin-left: 45px;
+  text-transform: uppercase;
 }
 
 .trend-section {
@@ -203,16 +200,17 @@
 }
 
 .main {
-  width: 61%;
+  width: 64%;
   max-width: 1020px;  
+  border: 1px solid red;
 }
 
 .main-main {
-  max-width: 1240px;
-  padding: 0;
+  max-width: 1200px;
+  padding: 0 15px;
   margin: 63px auto 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .main-news {
@@ -288,13 +286,11 @@
   font-family: OpenSans;
   line-height: 1.5;
   margin-top: 40px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .aside-bar {
-  width: 30%;
-  padding-left: 8%;
-  margin-left: 0;
+  max-width: 290px;
 }
 
 .aside-section:nth-child(n+2) {
@@ -520,7 +516,11 @@
 }
 
 .shop-button {
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
   width: 140px;
+  text-decoration: none;
 }
 
 .footer {
@@ -553,20 +553,12 @@
   margin-left: 30px;
 }
 
-.social-icon__twitter {
-  background-image: url("../svg/004-twitter.svg");
+.social-icon__dribbble {
+  background-image: url("../svg/001-dribbble.svg");
 }
 
 .social-icon__pinterest {
   background-image: url("../svg/001-pinterest.svg");
-}
-
-.social-icon__facebook {
-  background-image: url("../svg/002-facebook-logo.svg");
-}
-
-.social-icon__instagram {
-  background-image: url("../svg/005-instagram.svg");
 }
 
 .social-icon__tumblr {
