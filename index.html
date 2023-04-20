@@ -8,6 +8,41 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="popup hidden"> 
+		<div class="popup-container">
+			<button class="close-button" type="button">
+				<span class="visually-hidden">Закрыть окно</span>
+			</button>
+			<form class="feedback-form">
+				<h3 class="line">Ваш фидбек</h3>
+				<label class="feedback-form-group">
+					<span class="form-hint">Как часто вы заходите на сайт?</span>
+					<select class="field"> 
+						<option selected>Почти каждый день</option>
+						<option>Раз в несколько дней</option>
+						<option>Раз в несколько недель</option>
+						<option>Несколько раз в год</option>
+					</select>
+				</label>
+				<span class="form-hint">Вы подписаны на e-mail рассылку?</span>
+				<label>
+					<input class="radio-button" type="radio" name="radio-group">
+					<span class="radio-text">Да</span>
+				</label>
+				<label>
+					<input class="radio-button" type="radio" name="radio-group">
+					<span class="radio-text">Нет</span>
+				</label>
+				<label class="feedback-form-group">
+					<span class="form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+					<textarea class="field"  placeholder="Может, больше рецептов?" required></textarea>
+				</label>
+				<button class="button feedback-button" type="submit">
+					<span class="">Отправить</span> 
+				</button>
+			</form>
+		</div>
+	</div>
     <header class="header">
         <div class="header-content">
             <div class="header-logo">
@@ -16,6 +51,9 @@
                 </a>
             </div>
             <nav class="menu">
+                <button class="menu-button" type="button">
+                    <span class="menu-button-label"></span>
+              </button>
 				<ul class="menu-list">
 					<li class="menu-list-item">
 						<a class="menu-link" href="#">главная</a>
@@ -47,63 +85,63 @@
             <h2 class="line">сейчас в тренде</h2>
         </div>
         <div class="all-trends-news">
-        <article class="trend-news garden">
-            <div class="trend-card">
-                <ul class="news-card">
-                    <li class="card-item">
-                        <a class="news-teg" href="#">lifestyle</a>
-                    </li>
-                    <li class="card-item">
-                        <a class="news-teg" href="#">interior</a>
-                    </li>
-                </ul>
-                <h3 class="news-title">
-                    <a class="news-title-link" href="#">Сейчас в тренде: сад на подоконнике</a>
-                </h3>
-            </div>
-        </article>
-        <article class="trend-news cheese">
-            <div class="trend-card">
-                <ul class="news-card">
-                    <li class="card-item">
-                        <a class="news-teg" href="#">food</a>
-                    </li>
-                </ul>
-                <h3 class="news-title">
-                    <a class="news-title-link" href="#">Сыры на красивых картинка из интернете: какие они на вкус?</a>
-                </h3>
-            </div>
-        </article>
-        <article class="trend-news travel">
-            <div class="trend-card">
-                <ul class="news-card">
-                    <li class="card-item">
-                        <a class="news-teg" href="#">lifestyle</a>
-                    </li>
-                    <li class="card-item">
-                        <a class="news-teg" href="#">travel</a>
-                    </li>
-                </ul>
-                <h3 class="news-title">
-                    <a class="news-title-link" href="#">Собираемся в первый поход в горы</a>
-                </h3>
-            </div>
-        </article>
-        <article class="trend-news lemon">
-            <div class="trend-card">
-                <ul class="news-card">
-                    <li class="card-item">
-                        <a class="news-teg" href="#">food</a>
-                    </li>
-                    <li class="card-item">
-                        <a class="news-teg" href="#">health</a>
-                    </li>
-                </ul>
-                <h3 class="news-title">
-                    <a class="news-title-link" href="#">Сейчас в тренде: сколько витамина С в лимонах</a>
-                </h3>
-            </div>
-        </article>
+			<article class="trend-news garden">
+				<div class="trend-card">
+					<ul class="news-card">
+						<li class="card-item">
+							<a class="news-teg" href="#">lifestyle</a>
+						</li>
+						<li class="card-item">
+							<a class="news-teg" href="#">interior</a>
+						</li>
+					</ul>
+					<h3 class="news-title">
+						<a class="news-title-link" href="#">Сейчас в тренде: сад на подоконнике</a>
+					</h3>
+				</div>
+			</article>
+			<article class="trend-news cheese">
+				<div class="trend-card">
+					<ul class="news-card">
+						<li class="card-item">
+							<a class="news-teg" href="#">food</a>
+						</li>
+					</ul>
+					<h3 class="news-title">
+						<a class="news-title-link" href="#">Сыры на красивых картинка из интернете: какие они на вкус?</a>
+					</h3>
+				</div>
+			</article>
+			<article class="trend-news travel">
+				<div class="trend-card">
+					<ul class="news-card">
+						<li class="card-item">
+							<a class="news-teg" href="#">lifestyle</a>
+						</li>
+						<li class="card-item">
+							<a class="news-teg" href="#">travel</a>
+						</li>
+					</ul>
+					<h3 class="news-title">
+						<a class="news-title-link" href="#">Собираемся в первый поход в горы</a>
+					</h3>
+				</div>
+			</article>
+			<article class="trend-news lemon">
+				<div class="trend-card">
+					<ul class="news-card">
+						<li class="card-item">
+							<a class="news-teg" href="#">food</a>
+						</li>
+						<li class="card-item">
+							<a class="news-teg" href="#">health</a>
+						</li>
+					</ul>
+					<h3 class="news-title">
+						<a class="news-title-link" href="#">Сейчас в тренде: сколько витамина С в лимонах</a>
+					</h3>
+				</div>
+			</article>
         </div>
     </section>
     <div class="main-main">
@@ -370,7 +408,12 @@
 		</div>
 		<div class="handmade-section-item">
 			<div class="handmade-box">
-				<img class="box-img" src="images/shop-item-desk1.jpg" alt="подушка с принтом">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+					<source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet1.jpg">
+					<source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+					<img class="box-img" src="images/shop-item-desk1.jpg" alt="подушка с принтом">
+				</picture>
 				<div class="box-card">
 					<h3 class="box-title">Подушки на диван</h3>
 					<p class="box-text">Набор из двух подушек с модными принтами. Видео о создании <a class="box-link" href="#">здесь</a>.</p>
@@ -381,8 +424,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="handmade-box">		
-				<img class="box-img" src="images/shop-item-desk2.jpg" alt="кукла «Зайчик»">
+			<div class="handmade-box">	
+				<picture>
+					<source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+					<source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet2.jpg">
+					<source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+					<img class="box-img" src="images/shop-item-desk2.jpg" alt="кукла «Зайчик»">
+				</picture>	
 				<div class="box-card">
 					<h3 class="box-title">Кукла "Зайчик"</h3>
 					<p class="box-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="box-link" href="#">весенняя серия постов</a> в блоге и несколько подкастов.</p>
@@ -393,7 +441,12 @@
 				</div>
 			</div>
 			<div class="handmade-box">
-				<img class="box-img" src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+					<source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet3.jpg">
+					<source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+					<img class="box-img" src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+				</picture>	
 				<div class="box-card">
 					<h3 class="box-title">Шестиугольная рамка</h3>
 					<p class="box-text">Необычная рамка для украшения дома из видео <a class="box-link" href="#">«Как сделать рамку из подручных средств за 30 минут»</a></p>
