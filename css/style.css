@@ -773,6 +773,10 @@ textarea.field {
   }
 
   .header {
+    background-color: #000000;
+    background-image: url("../images/banner-bg-tablet.jpg") no-repeat center top;
+    padding-top: 45px;
+    background-size: cover;
     padding-bottom: 112px;
   }
 
@@ -834,25 +838,18 @@ textarea.field {
   .main-main {
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
     width: 100%;
-    /* margin: auto; */
-    border: 1px solid red;
   }
 
-  .main {
-    
-    border: 1px solid black;
+  .main-news {
+    display: flex;
+    flex-direction: column;
   }
 
   .article-title {
     margin-top: 10px;
     font-size: 17px;
     line-height: 1.3;
-  }
-
-  .aside-bar {
-    border: 1px solid green;
   }
 
   .aside-section:first-child {
@@ -906,19 +903,6 @@ textarea.field {
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
-  
-  .header {
-    background-color: #000000;
-    background-image: url("../images/banner-bg-tablet.jpg") no-repeat center top;
-    padding-top: 45px;
-    background-size: cover;
-  }
-
-  .main-news {
-    display: flex;
-    flex-direction: column;
-  }
-
   .image {
     width: 100%;
     min-width: 0;
@@ -979,9 +963,12 @@ textarea.field {
   }
 
   .header {
-    background-image: url("../images/banner-mobile.jpg");
+    background-image: url("../images/banner-mobile.jpg") no-repeat center top;
+    background-color: #000000;
+    background-size: cover;
     padding-top: 30px;
     padding-bottom: 210px;
+    width: 100%;
   }
 
   .header-content {
@@ -1008,6 +995,11 @@ textarea.field {
     line-height: 1.4;
   }
 
+  .all-trends-news, .main-main, .main-news{
+    display: flex;
+    flex-direction: column;
+  }
+
   .trend-section {
     margin-top: 40px;
   }
@@ -1018,13 +1010,10 @@ textarea.field {
 
   .line {
     font-size: 16px;
-  } */
+  } 
 
-  /* .underline:after {
-    margin-top: 8px;
-  } */
-
-  .all-trends-news, .main-main, .main-news, .handmade-section-item {
+  .main-main, .main-news, .handmade-section-item {
+    display: flex;
     flex-direction: column;
   }
 
@@ -1052,8 +1041,13 @@ textarea.field {
     border-bottom: 3px #eeeeee solid;
   }
 
+  .main-img {
+    width: 100%;
+    padding: 0px;
+  }
+
   .image {
-    min-width: 0;
+    object-fit: cover; 
   }
 
   .article-title {
@@ -1063,7 +1057,9 @@ textarea.field {
   }
 
   .main-content {
-    margin-left: 0;
+    width: 620px;
+    min-width: none;
+    margin-left: 0px;
     margin-top: 10px;
   }
 
@@ -1083,7 +1079,7 @@ textarea.field {
   }
 
   .aside-bar {
-    width: 100%;
+    max-width: 620px;
     margin-left: 0;
     margin-top: 39px;
   }
