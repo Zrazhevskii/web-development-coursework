@@ -688,22 +688,26 @@ textarea.field {
   height: 40px;
 }
 
+/* @media (min-width: 1200px) {
+
+  .menu-button {
+    display: none;
+  }
+} */
+
+/* для карточек трендов в четыре колонки */
 @media (min-width: 1200px) {
 
   .menu-button {
     display: none;
   }
-}
-
-/* для карточек трендов в четыре колонки */
-@media (min-width: 1200px) {
   
   .trend-news:nth-child(n+2) {
     margin-left: 4px;
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
     
   .close-button {
     height: 28px;
@@ -764,7 +768,7 @@ textarea.field {
 
 @media (min-width: 641px) and (max-width: 1199px) {
   
-  .header-content, .main-main, .footer {
+  .header-content, .footer {
     padding: 0 35px;
   }
 
@@ -804,6 +808,10 @@ textarea.field {
     margin-right: 4px;
   }
 
+  .trend-news:nth-child(3) {
+    margin-left: 0px;
+  }
+
   .all-trends-news {
     margin-top: 18px;
     justify-content: space-between;
@@ -824,7 +832,17 @@ textarea.field {
   }
 
   .main-main {
-    margin: 47px auto 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    /* margin: auto; */
+    border: 1px solid red;
+  }
+
+  .main {
+    
+    border: 1px solid black;
   }
 
   .article-title {
@@ -834,7 +852,7 @@ textarea.field {
   }
 
   .aside-bar {
-    margin-left: 35px;
+    border: 1px solid green;
   }
 
   .aside-section:first-child {
@@ -887,14 +905,17 @@ textarea.field {
   }
 }
 
-@media (min-width: 641px) and (max-width: 1050px) {
+@media (min-width: 641px) and (max-width: 1200px) {
   
   .header {
-    background-image: url("../images/banner-bg-tablet.jpg");
+    background-color: #000000;
+    background-image: url("../images/banner-bg-tablet.jpg") no-repeat center top;
     padding-top: 45px;
+    background-size: cover;
   }
 
   .main-news {
+    display: flex;
     flex-direction: column;
   }
 
@@ -911,7 +932,7 @@ textarea.field {
 }
 
 /* карточки товара по 2 в ряд */
-@media (min-width: 761px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   
   .handmade-box {
     width: calc(50% - 10px);
