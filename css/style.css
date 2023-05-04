@@ -6,14 +6,14 @@
 
 @font-face {
     font-family: OpenSans;
-    src: url(../fonts/OpenSans-Regular.ttf);
+    src: url("../fonts/OpenSans-Regular.ttf");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: OpenSans-Bold;
-    src: url(../fonts/OpenSans-Bold.ttf);
+    src: url("../fonts/OpenSans-Bold.ttf");
     font-weight: 700;
     font-style: normal;
 }
@@ -58,7 +58,7 @@ div.hidden {
   top: -25px;
   right: 0; 
 
-  background-image: url(../svg/form-x.svg);
+  background-image: url("../svg/form-x.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -85,7 +85,7 @@ div.hidden {
 .radio-text:before {
  content: "";
  display: inline-block;
- background-image: url(../svg/form-empty-circle.svg);
+ background-image: url("../svg/form-empty-circle.svg");
  height: 18px;
  width: 18px;
  background-repeat: no-repeat;
@@ -95,7 +95,7 @@ div.hidden {
 }
 
 .radio-button:checked ~ .radio-text:before {
- background-image: url(../svg/form-circle.svg);
+ background-image: url("../svg/form-circle.svg");
 }
 
 .radio-text {
@@ -104,7 +104,7 @@ div.hidden {
 }
 
 select.field {
-  background-image: url(../svg/form-arrows.svg);
+  background-image: url("../svg/form-arrows.svg");
   background-size: 10px auto;
   background-repeat: no-repeat;
   background-position: right 13px center;
@@ -126,7 +126,7 @@ textarea.field {
 
 .header {
     background-color: #000000;
-    background: url(../images/banner-bg.jpg) no-repeat center top;
+    background: url("../images/banner-bg.jpg") no-repeat center top;
     background-size: cover;
 
     padding-top: 25px;
@@ -687,13 +687,6 @@ textarea.field {
   height: 40px;
 }
 
-/* @media (min-width: 1200px) {
-
-  .menu-button {
-    display: none;
-  }
-} */
-
 /* для карточек трендов в четыре колонки */
 @media (min-width: 1200px) {
 
@@ -838,26 +831,23 @@ textarea.field {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    /* padding-left: 20px; */
   }
 
   .main {
     max-width: 50%;
     min-width: 45%;
-    border: 1px solid grey;
   }
 
   .main-news {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    border: 1px solid green;
   }
 
   .main-content {
+    max-width: 100%;
     margin-left: 0px;
     margin-top: 10px;
-    border: 1px solid red;
   }
 
   .main-img {
@@ -865,7 +855,7 @@ textarea.field {
   }
   
   .image {
-    max-width: 470px;
+    max-width: 490px;
   }
 
   .article-title {
@@ -891,8 +881,7 @@ textarea.field {
   }
 
   .aside-bar {
-    border: 1px solid black;
-    max-width: 35%;
+    max-width: 30%;
   }
 
   .handmade-section {
@@ -1019,10 +1008,6 @@ textarea.field {
     margin-top: 40px;
   }
 
-  .main {
-    width: 100%;
-  }
-
   .line {
     font-size: 16px;
   } 
@@ -1050,14 +1035,21 @@ textarea.field {
 
   .main-main {
     margin-top: 45px;
+    padding: 15px;
+  }
+
+  .main {
+    width: 100%;
+    padding: 0px;
   }
 
   .main-news {
-    border-bottom: 3px #eeeeee solid;
+    border-bottom: 3px solid #eeeeee ;
+    padding: 0px;
   }
 
   .main-img {
-    width: 100%;
+    max-width: 600px;
     padding: 0px;
   }
 
@@ -1072,7 +1064,7 @@ textarea.field {
   }
 
   .main-content {
-    width: 620px;
+    max-width: 620px;
     min-width: none;
     margin-left: 0px;
     margin-top: 10px;
