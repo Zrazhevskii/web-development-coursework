@@ -150,7 +150,6 @@ textarea.field {
 
 .header-logo {
     width: 180px;
-    /* margin-left: 90px; */
 }
 
 .header-content {
@@ -334,7 +333,7 @@ textarea.field {
 }
 
 .main-img {
-  width: 380px;
+  max-width: 380px;
   object-fit: contain;
   object-position: center top;
   overflow: hidden;
@@ -349,7 +348,7 @@ textarea.field {
 }
 
 .main-content {
-  width: 350px;
+  max-width: 350px;
   margin-left: 35px;
 }
 
@@ -839,11 +838,34 @@ textarea.field {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    /* padding-left: 20px; */
+  }
+
+  .main {
+    max-width: 50%;
+    min-width: 45%;
+    border: 1px solid grey;
   }
 
   .main-news {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    border: 1px solid green;
+  }
+
+  .main-content {
+    margin-left: 0px;
+    margin-top: 10px;
+    border: 1px solid red;
+  }
+
+  .main-img {
+    max-width: 100%;
+  }
+  
+  .image {
+    max-width: 470px;
   }
 
   .article-title {
@@ -866,6 +888,11 @@ textarea.field {
 
   .main-text {
     margin-top: 26px;
+  }
+
+  .aside-bar {
+    border: 1px solid black;
+    max-width: 35%;
   }
 
   .handmade-section {
@@ -902,22 +929,10 @@ textarea.field {
   }
 }
 
-@media (min-width: 641px) and (max-width: 1200px) {
-  .image {
-    width: 100%;
-    min-width: 0;
-    max-width: 380px;
-  }
-
-  .main-content {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-}
 
 /* карточки товара по 2 в ряд */
 @media (min-width: 768px) and (max-width: 1199px) {
-  
+
   .handmade-box {
     width: calc(50% - 10px);
   }
