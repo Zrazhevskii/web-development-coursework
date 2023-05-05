@@ -43,6 +43,7 @@ div.hidden {
 
 .popup-container {
   position: relative;
+  height: 450px;
 }
 
 .close-button {
@@ -210,7 +211,7 @@ textarea.field {
   text-transform: uppercase;
 }
 
-.trend-section-line, .handmade-section-title, .main-section-title {
+.line, .trend-section-line, .handmade-section-title, .main-section-title {
   text-align: center;
 }
 
@@ -699,11 +700,12 @@ textarea.field {
   }
 }
 
-@media (max-width: 1200px) {
-    
+
+@media (min-width: 641px) and (max-width: 1200px) {
+
   .close-button {
-    height: 28px;
-    width: 28px;
+    height: 20px;
+    width: 20px;
     top: -36px;
   }
 
@@ -756,9 +758,6 @@ textarea.field {
     position: absolute;
     bottom: 0;
   }
-}
-
-@media (min-width: 641px) and (max-width: 1199px) {
   
   .header-content, .footer {
     padding: 0 35px;
@@ -920,7 +919,7 @@ textarea.field {
 
 
 /* карточки товара по 2 в ряд */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1200px) {
 
   .handmade-box {
     width: calc(50% - 10px);
@@ -945,6 +944,10 @@ textarea.field {
     padding: 27px 24px 32px;
   }
 
+  .popup .hidden {
+    padding-left: 0px;
+  }
+
   .close-button {
     top: -32px;
   }
@@ -957,9 +960,9 @@ textarea.field {
     display: none;
   }
 
-  .popup-container {
+  /* .popup-container {
     margin: 0 15px;
-  }
+  } */
 
   .header-content, .main-main, .footer, .trend-news {
     padding-left: 15px;
@@ -1129,5 +1132,4 @@ textarea.field {
   .copyright {
     margin: 45px auto 45px;
   }
-
 }
